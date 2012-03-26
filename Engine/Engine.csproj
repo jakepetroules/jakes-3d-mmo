@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0B508BA-1196-4DA3-B031-B4049601F378}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMO3D.Engine</RootNamespace>
+    <AssemblyName>MMO3DEngine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="OpenTK, Version=0.9.8.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GlobalResources\References\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cameras\ChaseCamera.cs" />
+    <Compile Include="Cameras\Camera.cs" />
+    <Compile Include="Collections\PlayerCollection.cs" />
+    <Compile Include="Fonts\CharacterRegion.cs" />
+    <Compile Include="Content Pipeline\ContentBuilder.cs" />
+    <Compile Include="Content Pipeline\ErrorLogger.cs" />
+    <Compile Include="Content Pipeline\ModelBuilder.cs" />
+    <Compile Include="Display\Compass.cs" />
+    <Compile Include="Effects\CustomEffect.cs" />
+    <Compile Include="Effects\MultipleTextureTerrainEffect.cs" />
+    <Compile Include="Effects\TexturedFluidEffect.cs" />
+    <Compile Include="Fonts\FontDefinition.cs" />
+    <Compile Include="GameObjectBase.cs" />
+    <Compile Include="Pack Files\ModelPackFileWriter.cs" />
+    <Compile Include="Pack Files\PackFile.cs" />
+    <Compile Include="Pack Files\PackFileIndex.cs" />
+    <Compile Include="Pack Files\PackFileReader.cs" />
+    <Compile Include="Pack Files\PackFileWriter.cs" />
+    <Compile Include="Pack Files\TerrainPackFileReader.cs" />
+    <Compile Include="Pack Files\TerrainPackFileWriter.cs" />
+    <Compile Include="PackFileContentManager.cs" />
+    <Compile Include="Physics\Collision.cs" />
+    <Compile Include="Cryptography\SimpleCryptography.cs" />
+    <Compile Include="Base\EngineManager.cs" />
+    <Compile Include="Cryptography\KeyPair.cs" />
+    <Compile Include="Picking\Picking.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Fonts\SpriteFontCreator.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Terrain\Fluids\Fluid.cs" />
+    <Compile Include="Terrain\Fluids\FluidFlowDirection.cs" />
+    <Compile Include="Terrain\Fluids\FluidType.cs" />
+    <Compile Include="Terrain\Fluids\FluidVertex.cs" />
+    <Compile Include="Terrain\QuadTree\Enumerations\NodeChild.cs" />
+    <Compile Include="Terrain\QuadTree\Enumerations\NodeContents.cs" />
+    <Compile Include="Terrain\QuadTree\Enumerations\NodeSideVertex.cs" />
+    <Compile Include="Terrain\QuadTree\Enumerations\NodeVertex.cs" />
+    <Compile Include="Terrain\QuadTree\QuadNode.cs" />
+    <Compile Include="Terrain\QuadTree\QuadNodeCollection.cs" />
+    <Compile Include="Terrain\QuadTree\QuadTerrain.cs" />
+    <Compile Include="Terrain\QuadTree\QuadTree.cs" />
+    <Compile Include="Terrain\QuadTree\Structures\BuffersData.cs" />
+    <Compile Include="Terrain\QuadTree\Structures\TerrainPrimitive.cs" />
+    <Compile Include="Terrain\QuadTree\TerrainVertex.cs" />
+    <Compile Include="Terrain\QuadTree\Vector.cs" />
+    <Compile Include="Terrain\Season.cs" />
+    <Compile Include="Terrain\Editor\TerrainControlTools.cs" />
+    <Compile Include="Terrain\CoordinateConverter.cs" />
+    <Compile Include="Terrain\Editor\TerrainCursor.cs" />
+    <Compile Include="Pack Files\PackFileEntry.cs" />
+    <Compile Include="Terrain\Sky\SkyType.cs" />
+    <Compile Include="Terrain\TerrainManager.cs" />
+    <Compile Include="Terrain\Ground\TerrainPatchVertexCoordinates.cs" />
+    <Compile Include="Terrain\Ground\TerrainType.cs" />
+    <Compile Include="Terrain\Ground\VertexPositionNormalMultipleTexture.cs" />
+    <Compile Include="Terrain\Ground\VertexProperties.cs" />
+    <Compile Include="XNA Extensions\AdvancedModelProcessor.cs" />
+    <Compile Include="XNA Extensions\ExtendedModel.cs" />
+    <Compile Include="Cryptography\KeyEncryption.cs" />
+    <Compile Include="Picking\ObjectPicking.cs" />
+    <Compile Include="Display\FrameCounter.cs" />
+    <Compile Include="Terrain\Ground\TerrainPatch.cs" />
+    <Compile Include="Base\GameEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Terrain\Sky\Sky.cs" />
+    <Compile Include="XNA Extensions\GraphicsDeviceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XNA Extensions\GraphicsDeviceService.cs" />
+    <Compile Include="XNA Extensions\ServiceContainer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Class Diagrams\GameObjectDiagram.cd" />
+    <None Include="Class Diagrams\ItemClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundTextures\DesertSand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundTextures\Dirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundTextures\Grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundTextures\Pebbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundTextures\Rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundTextures\Sand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundTextures\Snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FluidTextures\Lava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FluidTextures\Water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undefined.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configuration.config" />
+    <None Include="Resources\Effects\MultiTexturedTerrain.fx" />
+    <None Include="Resources\Effects\TexturedFluid.fx" />
+    <None Include="Resources\SkyTextures\Cloudy.png" />
+    <None Include="XNA Extensions\Microsoft Permissive License.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonCode\CommonCode.csproj">
+      <Project>{7452347B-B613-414E-B7F1-3BCF3C74B8D6}</Project>
+      <Name>CommonCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Synteza\Synteza.csproj">
+      <Project>{EEC4CEC6-F2B9-47CD-B5BD-A7B31D344B7C}</Project>
+      <Name>Synteza</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Animation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties StartDate="20090314" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

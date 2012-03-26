@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terrain &amp; Memory Considerations</title>
+</head>
+<body>
+<h1>Terrain &amp; Memory Considerations</h1>
+<p>A patch file size = 162 KB. Wih 768 Kbps DSL (96 KB/s), it takes 1.6875 seconds to download if uncompressed. That is 15.1875 seconds for 9 patches, and 8.4375 seconds for 5 of them.</p>
+<p>The current map's memory size in bytes:</p>
+<ul>
+<li>63 patches</li>
+<li>199,692 bytes (~195 KB) for height</li>
+<li>98,304 bytes (96 KB) for terrain type; all 3 seasons</li>
+<li>200,000 bytes (~195 KB) for buffers, <em>approximately</em></li>
+<li>500,000 bytes (~488 KB) for a patch in memory, <em>approximately</em></li>
+</ul>
+<p>Total: 30 MB for current terrain. This is 1.17% of the memory in my computer which has 2.5 GB of memory. This is 0.3% of the memory in a server with 8 GB of memory.</p>
+<p style="text-decoration: underline;">How much memory does an MMO server typically have?</p>
+<p>Alternatively, only cache in memory the patches where players are located. If the server's maximum player count is 500, the worst case scenario is 1072 MB regardless of the map's size.</p>
+<p>Movement validation can work as follows: holding the key does send a packet to move forward one unit, but will not send another until the time required to move 1 unit, has passed. The client will animate. Assume the speed is approximately 2 units per second, which is 2 network transfers per second.</p>
+</body>
+</html>

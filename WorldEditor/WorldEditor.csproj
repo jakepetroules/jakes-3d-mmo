@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C34BE60C-A762-4B6C-92E1-61CAB6688FC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMO3D.WorldEditor</RootNamespace>
+    <AssemblyName>MMO3DWorldEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\AddExistingPatchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddExistingPatchDialog.Designer.cs">
+      <DependentUpon>AddExistingPatchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddEditFluidDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddEditFluidDialog.Designer.cs">
+      <DependentUpon>AddEditFluidDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddNewPatchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddNewPatchDialog.Designer.cs">
+      <DependentUpon>AddNewPatchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorRenderWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DefaultProperties.cs">
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Dialogs\OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\OptionsDialog.Designer.cs">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ModelBuilderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ModelBuilderDialog.Designer.cs">
+      <DependentUpon>ModelBuilderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModelViewerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dialogs\RemovePatchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RemovePatchDialog.Designer.cs">
+      <DependentUpon>RemovePatchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ToolControls\TerrainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolControls\TerrainControl.Designer.cs">
+      <DependentUpon>TerrainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorldEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldEditorForm.Designer.cs">
+      <DependentUpon>WorldEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorldEditorForm.EditorRenderWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldEditorForm.EventHandlers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldEditorForm.MenuHandlers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldEditorForm.RenderingToolbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldEditorForm.TerrainToolbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorldMap.cs" />
+    <Compile Include="Dialogs\WorldMapGeneratorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\WorldMapGeneratorDialog.Designer.cs">
+      <DependentUpon>WorldMapGeneratorDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\AddExistingPatchDialog.resx">
+      <DependentUpon>AddExistingPatchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddEditFluidDialog.resx">
+      <DependentUpon>AddEditFluidDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddNewPatchDialog.resx">
+      <DependentUpon>AddNewPatchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RemovePatchDialog.resx">
+      <DependentUpon>RemovePatchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\WorldMapGeneratorDialog.resx">
+      <DependentUpon>WorldMapGeneratorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ModelBuilderDialog.resx">
+      <DependentUpon>ModelBuilderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolControls\TerrainControl.resx">
+      <DependentUpon>TerrainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorldEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorldEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonCode\CommonCode.csproj">
+      <Project>{7452347B-B613-414E-B7F1-3BCF3C74B8D6}</Project>
+      <Name>CommonCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{C0B508BA-1196-4DA3-B031-B4049601F378}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Synteza\Synteza.csproj">
+      <Project>{EEC4CEC6-F2B9-47CD-B5BD-A7B31D344B7C}</Project>
+      <Name>Synteza</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wireframe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddExisting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlwaysOnTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flatten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TerrainType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HideBase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties StartDate="20090503" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

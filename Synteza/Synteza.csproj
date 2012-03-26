@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEC4CEC6-F2B9-47CD-B5BD-A7B31D344B7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Petroules.Synteza</RootNamespace>
+    <AssemblyName>Synteza.NET</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\LIEL.NET.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\LIEL.NET.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Native\PlatformUtilities.cs" />
+    <Compile Include="Native\UnsupportedPlatformException.cs" />
+    <Compile Include="Native\[Win32]\NativeMethods.Icons.cs" />
+    <Compile Include="Native\[Win32]\NativeMethods.Input.cs" />
+    <Compile Include="Native\[Win32]\NativeMethods.Time.cs" />
+    <Compile Include="Native\[Win32]\NativeMethods.Windows.cs" />
+    <Compile Include="Native\[X11]\NativeMethods.X11.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="[Core]\Imaging\FastBitmap.cs" />
+    <Compile Include="[Core]\IO\ChecksumAlgorithm.cs" />
+    <Compile Include="[Core]\IO\ChecksumUtilities.cs" />
+    <Compile Include="[Core]\IO\PathExtensions.cs" />
+    <Compile Include="[Core]\IO\SerializationHelper.cs" />
+    <Compile Include="[Core]\IO\SimpleCompression.cs" />
+    <Compile Include="[Core]\Math\InformationUnit.cs" />
+    <Compile Include="[Core]\Math\InformationUnitConverter.cs" />
+    <Compile Include="[Core]\Math\MathHelper.cs" />
+    <Compile Include="[Core]\Security\RsaEncryption.cs" />
+    <Compile Include="[Core]\Text\FilterString.cs" />
+    <Compile Include="[Core]\Text\FilterStringCollection.cs" />
+    <Compile Include="[Core]\Threading\SingleInstance.cs" />
+    <Compile Include="[Core]\Web\ResponseFilterStream.cs" />
+    <Compile Include="[Core]\Web\UI\Controls\GridViewControls\BooleanField.cs" />
+    <Compile Include="[Core]\Web\UI\Controls\HelpIcon.cs" />
+    <Compile Include="[Core]\Web\UI\Controls\JavaApplet.cs" />
+    <Compile Include="[Core]\Web\UI\Controls\NotificationBox.cs" />
+    <Compile Include="[Core]\Web\W3CValidator.cs" />
+    <Compile Include="[Core]\Web\W3CValidityCheckResult.cs" />
+    <Compile Include="[Core]\Web\WebUtilities.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.CheckBox.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.ComboBox.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.Control.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.Form.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.PictureBox.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.ProgressBar.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.RadioButton.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.SplitContainer.cs" />
+    <Compile Include="[Core]\Windows\Forms\LambdaHelper.TextBoxBase.cs" />
+    <Compile Include="[Core]\Windows\Forms\MessageBoxExt.cs" />
+    <Compile Include="[Core]\Windows\Forms\[Dialogs]\ExtendedColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="[Core]\Windows\Forms\[Dialogs]\ExtendedColorDialog.Designer.cs">
+      <DependentUpon>ExtendedColorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[Core]\Windows\Forms\[Dialogs]\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="[Core]\Windows\Forms\[Dialogs]\ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="[Core]\Xml\XmlDtdAttribute.cs" />
+    <Compile Include="[Core]\Xml\XmlSerializationHelper.cs" />
+    <Compile Include="[Core]\[Extensions]\IListExtensions.cs" />
+    <Compile Include="[Core]\[Extensions]\ImageExtensions.cs" />
+    <Compile Include="[Core]\[Extensions]\ImageFormatExtensions.cs" />
+    <Compile Include="[Core]\[Extensions]\RectangleExtensions.cs" />
+    <Compile Include="[Core]\[Extensions]\ScreenExtensions.cs" />
+    <Compile Include="[Core]\[Extensions]\StreamExtensions.cs" />
+    <Compile Include="[Core]\[Extensions]\StringExtensions.cs" />
+    <Compile Include="[Core]\[Extensions]\WebControlExtensions.cs" />
+    <Compile Include="[Core]\[Helpers]\AssemblyProperties.cs" />
+    <Compile Include="[Core]\[Helpers]\EnumHelper.cs" />
+    <Compile Include="[Core]\[Helpers]\LocalizationHelper.cs" />
+    <Compile Include="[WindowsOnly]\Imaging\CursorCreator.cs" />
+    <Compile Include="[WindowsOnly]\Imaging\ImageCapture.cs" />
+    <Compile Include="[WindowsOnly]\Imaging\PngOptimizer.cs" />
+    <Compile Include="[WindowsOnly]\WindowManager.cs" />
+    <Compile Include="[WindowsOnly]\Windows\Forms\SendClicks.cs" />
+    <Compile Include="[WindowsOnly]\Windows\SystemClock.cs" />
+    <Compile Include="{Networking}\NetworkClient.cs" />
+    <Compile Include="{Networking}\NetworkServerHandler.cs" />
+    <Compile Include="{Networking}\NetworkServerListener.cs" />
+    <Compile Include="{Networking}\NetworkUtilities.cs" />
+    <Compile Include="{Networking}\[Enumerations]\AuthenticationResult.cs" />
+    <Compile Include="{Networking}\[Enumerations]\ConnectionStatus.cs" />
+    <Compile Include="{Networking}\[Enumerations]\ConnectionTerminationType.cs" />
+    <Compile Include="{Networking}\[Enumerations]\ListenerStopType.cs" />
+    <Compile Include="{Networking}\[EventArgs]\ClientAuthenticatingEventArgs.cs" />
+    <Compile Include="{Networking}\[EventArgs]\ClientConnectedEventArgs.cs" />
+    <Compile Include="{Networking}\[EventArgs]\DisconnectedEventArgs.cs" />
+    <Compile Include="{Networking}\[EventArgs]\ListenerStartFailedEventArgs.cs" />
+    <Compile Include="{Networking}\[EventArgs]\ListenerStoppedEventArgs.cs" />
+    <Compile Include="{Networking}\[EventArgs]\PacketEventArgs.cs" />
+    <Compile Include="{Networking}\[Packets]\AuthenticationPacket.cs" />
+    <Compile Include="{Networking}\[Packets]\AuthenticationResultPacket.cs" />
+    <Compile Include="{Networking}\[Packets]\ClientInitPacket.cs" />
+    <Compile Include="{Networking}\[Packets]\Packet.cs" />
+    <Compile Include="{Networking}\[Packets]\ServerInitPacket.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Native\ReadMe.txt" />
+    <None Include="Resources\Transparent.png" />
+    <None Include="Resources\PngCrush.exe" />
+    <Content Include="[Core]\ReadMe.txt" />
+    <Content Include="[WindowsOnly]\ReadMe.txt" />
+    <Content Include="[WindowsOnly]\Windows\ReadMe.txt" />
+    <Content Include="{Networking}\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[Core]\Windows\Forms\[Dialogs]\ExtendedColorDialog.resx">
+      <DependentUpon>ExtendedColorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="[Core]\Windows\Forms\[Dialogs]\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

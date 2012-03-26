@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7452347B-B613-414E-B7F1-3BCF3C74B8D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMO3D.CommonCode</RootNamespace>
+    <AssemblyName>CommonCode</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\CommonCode.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\CommonCode.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CharacterClass.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Enumerations\DisableReason.cs" />
+    <Compile Include="Enumerations\ArmorType.cs" />
+    <Compile Include="Enumerations\EquipmentSlot.cs" />
+    <Compile Include="Enumerations\ItemClass.cs" />
+    <Compile Include="Enumerations\ItemQuality.cs" />
+    <Compile Include="Enumerations\ObjectType.cs" />
+    <Compile Include="Enumerations\WeaponType1H.cs" />
+    <Compile Include="Enumerations\WeaponType2H.cs" />
+    <Compile Include="GameRandom.cs" />
+    <Compile Include="Enumerations\Gender.cs" />
+    <Compile Include="GlobalValues.cs" />
+    <Compile Include="Inventories\Inventory.cs" />
+    <Compile Include="Inventories\PlayerInventory.cs" />
+    <Compile Include="Inventories\ResourceInventory.cs" />
+    <Compile Include="ItemUtilities.cs" />
+    <Compile Include="MathExtensions.cs" />
+    <Compile Include="PlayerStats.cs" />
+    <Compile Include="Enumerations\UserPermissionLevel.cs" />
+    <Compile Include="Point3D.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextureManipulation.cs" />
+    <Compile Include="WebResourceUrls.cs" />
+    <Compile Include="Items\Accessory.cs" />
+    <Compile Include="Items\Armor.cs" />
+    <Compile Include="Items\Belt.cs" />
+    <Compile Include="Items\DefensiveMunition.cs" />
+    <Compile Include="Items\Exceptions\UndefinedItemException.cs" />
+    <Compile Include="Items\Food.cs" />
+    <Compile Include="Items\IQuality.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\Material.cs" />
+    <Compile Include="Items\MiscellaneousItem.cs" />
+    <Compile Include="Items\Munition.cs" />
+    <Compile Include="Items\OffensiveMunition.cs" />
+    <Compile Include="Items\OneHandedWeapon.cs" />
+    <Compile Include="Items\Potion.cs" />
+    <Compile Include="Items\Shield.cs" />
+    <Compile Include="Items\SpellShard.cs" />
+    <Compile Include="Items\Tool.cs" />
+    <Compile Include="Items\TwoHandedWeapon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Synteza\Synteza.csproj">
+      <Project>{EEC4CEC6-F2B9-47CD-B5BD-A7B31D344B7C}</Project>
+      <Name>Synteza</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties StartDate="20090624" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

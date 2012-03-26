@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationUpdaterWindowsOnly" xml:space="preserve">
+    <value>This update system uses MSI installers and is therefore only available on Windows NT or later.</value>
+  </data>
+  <data name="AttributeNotFound" xml:space="preserve">
+    <value>The {0} attribute was not found on the specified type {1}.</value>
+  </data>
+  <data name="CheckingForUpdates" xml:space="preserve">
+    <value>Checking for updates...</value>
+  </data>
+  <data name="CompletedDownloadingFile" xml:space="preserve">
+    <value>Completed downloading file "{0}".</value>
+  </data>
+  <data name="CreatedTemporaryDirectory" xml:space="preserve">
+    <value>Created temporary directory for installation files.</value>
+  </data>
+  <data name="DownloadedUpdateDefinitionFile" xml:space="preserve">
+    <value>Downloaded update definition file.</value>
+  </data>
+  <data name="DownloadingFile" xml:space="preserve">
+    <value>Downloading file "{0}"...</value>
+  </data>
+  <data name="DownloadingUpdate" xml:space="preserve">
+    <value>Downloading update... {0}%</value>
+  </data>
+  <data name="DownloadProcessManuallyAborted" xml:space="preserve">
+    <value>The download process was manually aborted.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="FileChecksumFailed" xml:space="preserve">
+    <value>The file "{0}" was not downloaded intact.</value>
+  </data>
+  <data name="ImageFormatNameEnhancedMetafile" xml:space="preserve">
+    <value>Enhanced Metafile</value>
+  </data>
+  <data name="ImageFormatNameExchangeableImageFileFormat" xml:space="preserve">
+    <value>Exchangeable image file format</value>
+  </data>
+  <data name="ImageFormatNameGraphicsInterchangeFormat" xml:space="preserve">
+    <value>Graphics Interchange Format</value>
+  </data>
+  <data name="ImageFormatNameJointPhotographicExpertsGroup" xml:space="preserve">
+    <value>Joint Photographic Experts Group</value>
+  </data>
+  <data name="ImageFormatNamePortableNetworkGraphics" xml:space="preserve">
+    <value>Portable Network Graphics</value>
+  </data>
+  <data name="ImageFormatNameTaggedImageFileFormat" xml:space="preserve">
+    <value>Tagged Image File Format</value>
+  </data>
+  <data name="ImageFormatNameUnrecognized" xml:space="preserve">
+    <value>Format was ImageFormat.MemoryBmp or was not recognized.</value>
+  </data>
+  <data name="ImageFormatNameWindowsBitmap" xml:space="preserve">
+    <value>Windows Bitmap</value>
+  </data>
+  <data name="ImageFormatNameWindowsIcon" xml:space="preserve">
+    <value>Windows Icon</value>
+  </data>
+  <data name="ImageFormatNameWindowsMetafile" xml:space="preserve">
+    <value>Windows Metafile</value>
+  </data>
+  <data name="ImageSizeTooSmall" xml:space="preserve">
+    <value>Width or height of captured image cannot be less than or equal to zero.</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="InitialPollDelayMustBeBetween" xml:space="preserve">
+    <value>Initial poll delay must be between 0 and {0} seconds, inclusive.</value>
+  </data>
+  <data name="MethodAlreadyCalled" xml:space="preserve">
+    <value>The method has already been called.</value>
+  </data>
+  <data name="MustLockBeforeAccessingPixelData" xml:space="preserve">
+    <value>The Lock() method must be called before pixel data can be accessed.</value>
+  </data>
+  <data name="NoInstallerFound" xml:space="preserve">
+    <value>No installer found for the specified culture: {0}</value>
+  </data>
+  <data name="NotAnEnumeration" xml:space="preserve">
+    <value>The specified type is not an enumeration.</value>
+  </data>
+  <data name="NoUpdateAvailable" xml:space="preserve">
+    <value>No update is available</value>
+  </data>
+  <data name="NoUpdateUrlSpecified" xml:space="preserve">
+    <value>No update URL was specified.</value>
+  </data>
+  <data name="PathContainedInvalidCharacters" xml:space="preserve">
+    <value>The path contained one or more invalid characters.</value>
+  </data>
+  <data name="ProgressMustBeInRange" xml:space="preserve">
+    <value>Progress must not be less than zero or greater than 100.</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="UnableToCastEventArguments" xml:space="preserve">
+    <value>Unable to cast the installation event arguments and retrieve the file name of the downloaded installation file. This indicates a code error, and should never happen.</value>
+  </data>
+  <data name="UnableToSetSystemTime" xml:space="preserve">
+    <value>Unable to set the system time.</value>
+  </data>
+  <data name="UpdateAvailable" xml:space="preserve">
+    <value>An update to version {0} is available! You are running {1}</value>
+  </data>
+  <data name="UpdateCheckFailed" xml:space="preserve">
+    <value>Unable to check for updates! The error message returned was: {0}</value>
+  </data>
+  <data name="UpdateCheckFailedShort" xml:space="preserve">
+    <value>Unable to check for updates!</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>The application update process has failed! The error message returned was: {0}</value>
+  </data>
+  <data name="UpdateFailedShort" xml:space="preserve">
+    <value>The application update process has failed!</value>
+  </data>
+  <data name="UpdateUrlNull" xml:space="preserve">
+    <value>The update URL was null.</value>
+  </data>
+  <data name="ValueMustBeInRange" xml:space="preserve">
+    <value>Value must be between 0 and 100, inclusive.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="XhtmlDocumentBase" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" dir="ltr"&gt;
+&lt;head&gt;
+    &lt;title&gt;Error Dialog&lt;/title&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8" /&gt;
+    &lt;meta http-equiv="expires" content="0" /&gt;
+    &lt;meta http-equiv="pragma" content="no-cache" /&gt;
+    &lt;meta http-equiv="cache-control" content="no-cache" /&gt;
+&lt;/head&gt;
+&lt;body style="background-color: rgb({0}, {1}, {2});"&gt;
+{3}
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PngCrush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PngCrush.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

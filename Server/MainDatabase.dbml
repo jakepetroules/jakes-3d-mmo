@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="MMO3D" Class="MainDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=MMO3D;Integrated Security=True" SettingsObjectName="MMO3D.Server.Properties.Settings" SettingsPropertyName="MMO3DConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BlockedAddresses" Member="BlockedAddresses">
+    <Type Name="BlockedAddress">
+      <Column Name="Address" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Players" Member="Players">
+    <Type Name="Player">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="UserLevel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DisableReason" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LoggedIn" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastLogOnAttempt" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LastLogOnSuccess" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LastLogOnAttemptIP" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LastLogOnSuccessIP" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LogOnAttempts" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PositionX" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PositionY" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PositionZ" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="RotationX" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="RotationY" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="RotationZ" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FilteredWords" Member="FilteredWords">
+    <Type Name="FilteredWord">
+      <Column Name="Word" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

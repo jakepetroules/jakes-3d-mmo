@@ -1,0 +1,1 @@
+This folder contains various classes that function on Microsoft.NET only (not on Mono), at least for the time being. Even a class mostly functions except for a single method, it must not be included into the NetUtilities core.

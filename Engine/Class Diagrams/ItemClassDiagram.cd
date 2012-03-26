@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MMO3D.Engine.Accessory">
+    <Position X="13" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Accessory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MMO3D.Engine.Armor">
+    <Position X="24.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Belt">
+    <Position X="19.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAECAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Items\Belt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.DefensiveMunition">
+    <Position X="25.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\DefensiveMunition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Food">
+    <Position X="35.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Food.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MMO3D.Engine.Item">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAgCAAAAAAAAAQAUAAAABAAAAIACAAAAAA=</HashCode>
+      <FileName>Items\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Material">
+    <Position X="15.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Material.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MMO3D.Engine.MiscellaneousItem">
+    <Position X="22" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\MiscellaneousItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Munition">
+    <Position X="27.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABABBAAAACAACAAgAABBAAAAQAAAAA=</HashCode>
+      <FileName>Items\Munition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MMO3D.Engine.OneHandedWeapon">
+    <Position X="28.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\OneHandedWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Potion">
+    <Position X="17.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Potion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MMO3D.Engine.Shield">
+    <Position X="26.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Shield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.SpellShard">
+    <Position X="33.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAIA=</HashCode>
+      <FileName>Items\SpellShard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Tool">
+    <Position X="37.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Tool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.TwoHandedWeapon">
+    <Position X="31" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\TwoHandedWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.OffensiveMunition">
+    <Position X="29.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\OffensiveMunition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MMO3D.Engine.ArmorType" Collapsed="true">
+    <Position X="40.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAACA=</HashCode>
+      <FileName>Items\Enumerations\ArmorType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MMO3D.Engine.EquipmentSlot" Collapsed="true">
+    <Position X="42" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAACABAAAAACgEAQAIAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Items\Enumerations\EquipmentSlot.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MMO3D.Engine.ItemClass" Collapsed="true">
+    <Position X="43.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAACIAAEAAAAgAAAAAADgAAQAAAAAEAAAAgAAACA=</HashCode>
+      <FileName>Items\Enumerations\ItemClass.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MMO3D.Engine.WeaponType1H" Collapsed="true">
+    <Position X="40.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAAAAAAAAAQAQAAAAAAAIAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Items\Enumerations\WeaponType1H.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MMO3D.Engine.WeaponType2H" Collapsed="true">
+    <Position X="42" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAEAAAAAAIAAAAAAAQAAAAAAAAAAACA=</HashCode>
+      <FileName>Items\Enumerations\WeaponType2H.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MainDatabase">
+  <DataContextMoniker Name="/MainDatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7c8d87d1-0b98-4ece-b2ab-f713d5fa03e3" absoluteBounds="4.25, 1.625, 2, 1.0016910807291668">
+      <DataClassMoniker Name="/MainDatabaseDataContext/BlockedAddress" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ed61634-c236-49e7-aea8-c2e0ffc4de37" absoluteBounds="4.265, 2.085, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2bfd66b4-8d83-4eff-bd42-fe7a9fbe958e" absoluteBounds="1.375, 1, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/MainDatabaseDataContext/Player" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69b0aebc-7ac4-4dc3-8e59-74942d006ff4" absoluteBounds="1.3900000000000001, 1.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5ff8b91-bb60-4a4e-a695-6ccaa0575c58" absoluteBounds="4.375, 3.375, 2, 1.0016910807291668">
+      <DataClassMoniker Name="/MainDatabaseDataContext/FilteredWord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="afed4536-fc47-4a5e-a185-0e5f2dece123" absoluteBounds="4.39, 3.835, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

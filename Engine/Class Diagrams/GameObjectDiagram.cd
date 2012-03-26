@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="For reference, these classes roughly correspond to the following in RuneScape:&#xD;&#xA;&#xD;&#xA;GameObjectBase = N/A&#xD;&#xA;BasicObject = Objects (crates, trees, rocks on the ground)&#xD;&#xA;Building = Normal buildings&#xD;&#xA;CombatBuilding = Barricades and explodable barrels&#xD;&#xA;Player = Player&#xD;&#xA;Npc &amp; CombatNpc = NPC&#xD;&#xA;Gateway = N/A&#xD;&#xA;&#xD;&#xA;Short paragraph on how drops will work…&#xD;&#xA;If we use some sort of icon, we could have various icons showing relative rarity of the drop. Let's just say our items are leveled from 1 – 30. Levels 1 to 12 are, say, brown. 13 to 24 can be silver. 25 to 30 are gold, or something like that, we can work it out later. Why don't we also give them an indicator if they haven't been looted yet? Like, if they're glowing, it means no one is looting it or has looted it already. That way if you kill 15 monsters, you can tell which items your team mates are taking items from / already took the good stuff from. Also, we can make them appear to entire teams. So everyone on your team can loot the pile, first come first serve. We may also be able to implement other sharing options... anyways; if we do something like that we’ll need to be able to create these object piles too.">
+    <Position X="0.5" Y="0.5" Height="3.521" Width="3.606" />
+  </Comment>
+  <Class Name="MMO3D.Engine.GameObjectBase">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAEAIACAEAAoAhAACAIAAAAACBAAEAAAsgAASAAAA=</HashCode>
+      <FileName>Game Objects\GameObjectBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.CombatNpc">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game Objects\CombatNpc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Gateway">
+    <Position X="7.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAABCAAAAA=</HashCode>
+      <FileName>Game Objects\Gateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Npc">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game Objects\Npc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Player">
+    <Position X="11.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game Objects\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.BasicObject">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game Objects\BasicObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Building">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game Objects\Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.CombatBuilding">
+    <Position X="2.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game Objects\CombatBuilding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Door">
+    <Position X="5" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIgAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game Objects\Door.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MMO3D.Engine.Resource">
+    <Position X="14" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Game Objects\Resource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MMO3D.Engine.Direction" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Game Objects\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
